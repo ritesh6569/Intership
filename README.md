@@ -57,8 +57,8 @@ O(n) for the hash table and linked list, where n is the capacity.
 Additional space for filepaths and metadata.
 
 ## How to Run
-gcc -Wall -Wextra -g -o test_lru test_lru.c lru_cache.c
-test_lru.exe
+## Compile : gcc -Wall -Wextra -g -o test_lru test_lru.c lru_cache.c
+## Run : test_lru.exe
 
 
 # Multithreaded Unique Number Finder
@@ -131,5 +131,5 @@ O(n) for the hash set (num and f arrays) and file position array (num_pos).
 O(k) per thread for the local unique number array (new_num), where k is the number of locally unique numbers.
 
 ## How to run
-gcc -o unique_numbers unique_numbers.c
-./unique_numbers.exe numbers.txt
+## Compile : gcc -o unique_numbers unique_numbers.c  
+## Run : ./unique_numbers.exe numbers.txt
