@@ -56,7 +56,9 @@ Remove Expired: O(n) worst case, where n is the number of expired entries.
 O(n) for the hash table and linked list, where n is the capacity.
 Additional space for filepaths and metadata.
 
-
+## How to Run
+gcc -Wall -Wextra -g -o test_lru test_lru.c lru_cache.c
+test_lru.exe
 
 
 # Multithreaded Unique Number Finder
@@ -115,7 +117,6 @@ Creates and waits for threads to complete.
 Prints the count and list of unique numbers.
 
 
-
 ## Time Complexity:
 
 Hash Set Operations: O(1) average case for insertion and lookup (linear probing).
@@ -124,8 +125,11 @@ Thread Processing: O(n/t) per thread, where n is the number of numbers and t is 
 Critical Section: O(k) for adding k locally unique numbers to the global hash set.
 
 
-
 ## Space Complexity:
 
 O(n) for the hash set (num and f arrays) and file position array (num_pos).
 O(k) per thread for the local unique number array (new_num), where k is the number of locally unique numbers.
+
+## How to run
+gcc -o unique_numbers unique_numbers.c
+./unique_numbers.exe numbers.txt
